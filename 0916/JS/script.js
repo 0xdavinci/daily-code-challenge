@@ -6,13 +6,13 @@ function capitalize(paragraph) {
     const ch = chars[i];
 
     // If we should capitalize and this is a lowercase ASCII letter, do: code-32
-    if (flag && ch >= "a" && ch <= "z") {
+    if (flag && /[a-z]/.test(ch)) {
       chars[i] = String.fromCharCode(ch.charCodeAt(0) - 32); // paragraph[i] = paragraph[i]-32
       flag = false;
     }
 
     // After sentence-ending punctuation, capitalize next letter we see
-    if (ch === "." || ch === "?" || ch === "!") {
+    if (/[!?.]/.test(ch)) {
       flag = true;
     }
   }
