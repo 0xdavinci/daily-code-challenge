@@ -1,0 +1,1 @@
+I decided to write over 100 lines of code each day, so I joined freeCodeCamp's daily code challenge. Stay tuned for my progress!
